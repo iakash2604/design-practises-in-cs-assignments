@@ -1,0 +1,121 @@
+\hypertarget{class_boid}{}\section{Boid Class Reference}
+\label{class_boid}\index{Boid@{Boid}}
+
+
+{\ttfamily \#include $<$Boid.\+h$>$}
+
+
+
+Collaboration diagram for Boid\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_boid__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Boid} (float x, float y)\hypertarget{class_boid_a61c7081f12c16ba99dc4b3c094195bb2}{}\label{class_boid_a61c7081f12c16ba99dc4b3c094195bb2}
+
+\item 
+\hyperlink{class_boid_a22e47f71f5d635f788ff747cf69bdc55}{Boid} (float x, float y, int pred\+Check)\hypertarget{class_boid_a22e47f71f5d635f788ff747cf69bdc55}{}\label{class_boid_a22e47f71f5d635f788ff747cf69bdc55}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_boid_acef10e100c27b76f6b867ae7468c09bb}{apply\+Force(\+Pvector force)}\+: Adds the given vector to acceleration \end{DoxyCompactList}\item 
+void \hyperlink{class_boid_acef10e100c27b76f6b867ae7468c09bb}{apply\+Force} (\hyperlink{class_pvector}{Pvector} force)\hypertarget{class_boid_acef10e100c27b76f6b867ae7468c09bb}{}\label{class_boid_acef10e100c27b76f6b867ae7468c09bb}
+
+\begin{DoxyCompactList}\small\item\em Three Laws that boids follow. \end{DoxyCompactList}\item 
+\hyperlink{class_pvector}{Pvector} \hyperlink{class_boid_aa6910fba0e1edba1eac4c1ca234d1199}{Separation} (vector$<$ \hyperlink{class_boid}{Boid} $>$ Boids)
+\item 
+\hyperlink{class_pvector}{Pvector} \hyperlink{class_boid_ac1830d68d2af0eade8d26fc6084960aa}{Alignment} (vector$<$ \hyperlink{class_boid}{Boid} $>$ Boids)
+\item 
+\hyperlink{class_pvector}{Pvector} \hyperlink{class_boid_ae1f8d78202e983a11f1ee72e1de0473c}{Cohesion} (vector$<$ \hyperlink{class_boid}{Boid} $>$ Boids)
+\begin{DoxyCompactList}\small\item\em Functions involving S\+F\+ML and visualisation linking. \end{DoxyCompactList}\item 
+\hyperlink{class_pvector}{Pvector} {\bfseries seek} (\hyperlink{class_pvector}{Pvector} v)\hypertarget{class_boid_a3135a25087ac386d92e28b5718f6504f}{}\label{class_boid_a3135a25087ac386d92e28b5718f6504f}
+
+\item 
+void {\bfseries run} (vector$<$ \hyperlink{class_boid}{Boid} $>$ v)\hypertarget{class_boid_a292bf6dc850fe8d220fe3af7667e1090}{}\label{class_boid_a292bf6dc850fe8d220fe3af7667e1090}
+
+\item 
+void {\bfseries update} ()\hypertarget{class_boid_a7404d18dcb7dfc669e80c534819fa893}{}\label{class_boid_a7404d18dcb7dfc669e80c534819fa893}
+
+\item 
+void {\bfseries flock} (vector$<$ \hyperlink{class_boid}{Boid} $>$ v)\hypertarget{class_boid_ab8696c8548189dba88f59d917a2212fb}{}\label{class_boid_ab8696c8548189dba88f59d917a2212fb}
+
+\item 
+void {\bfseries borders} ()\hypertarget{class_boid_ab297036090d8dad9e70379ecfeb60137}{}\label{class_boid_ab297036090d8dad9e70379ecfeb60137}
+
+\item 
+float {\bfseries angle} (\hyperlink{class_pvector}{Pvector} v)\hypertarget{class_boid_afeb7353f3946b4bd1072a14aee888770}{}\label{class_boid_afeb7353f3946b4bd1072a14aee888770}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_boid_af6faa80aeac271c4521eca772336a8b9}{predator}
+\begin{DoxyCompactList}\small\item\em $<$ bool predator\+: flag that specifies whether a given boid is a predator. \end{DoxyCompactList}\item 
+int \hyperlink{class_boid_afb70f86fbd40056d76c7d3875d20e699}{killed}\hypertarget{class_boid_afb70f86fbd40056d76c7d3875d20e699}{}\label{class_boid_afb70f86fbd40056d76c7d3875d20e699}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_pvector}{Pvector} location\+: Vector that specifies a boid\textquotesingle{}s location. \end{DoxyCompactList}\item 
+\hyperlink{class_pvector}{Pvector} \hyperlink{class_boid_a92a7f1ed6423149cd8a28426695d127e}{location}\hypertarget{class_boid_a92a7f1ed6423149cd8a28426695d127e}{}\label{class_boid_a92a7f1ed6423149cd8a28426695d127e}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_pvector}{Pvector} velocity\+: Vector that specifies a boid\textquotesingle{}s current velocity. \end{DoxyCompactList}\item 
+\hyperlink{class_pvector}{Pvector} \hyperlink{class_boid_af79ca165b4d1a6ad1db2cbc534095bab}{velocity}\hypertarget{class_boid_af79ca165b4d1a6ad1db2cbc534095bab}{}\label{class_boid_af79ca165b4d1a6ad1db2cbc534095bab}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_pvector}{Pvector} acceleration\+: Vector that specifies a boid\textquotesingle{}s current acceleration. \end{DoxyCompactList}\item 
+\hyperlink{class_pvector}{Pvector} \hyperlink{class_boid_ac29a50172433e865b12e1023f00f90c0}{acceleration}\hypertarget{class_boid_ac29a50172433e865b12e1023f00f90c0}{}\label{class_boid_ac29a50172433e865b12e1023f00f90c0}
+
+\begin{DoxyCompactList}\small\item\em float max\+Speed\+: Limits magnitude of velocity vector. \end{DoxyCompactList}\item 
+float \hyperlink{class_boid_ac57e1058fb698a542990405ecfd1d88b}{max\+Speed}\hypertarget{class_boid_ac57e1058fb698a542990405ecfd1d88b}{}\label{class_boid_ac57e1058fb698a542990405ecfd1d88b}
+
+\begin{DoxyCompactList}\small\item\em float max\+Force\+: Limits magnitude of acceleration vector. (F = m$\ast$a!) \end{DoxyCompactList}\item 
+float \hyperlink{class_boid_a2a6d579118276efaeac7ba0e4b872afd}{max\+Force}\hypertarget{class_boid_a2a6d579118276efaeac7ba0e4b872afd}{}\label{class_boid_a2a6d579118276efaeac7ba0e4b872afd}
+
+\begin{DoxyCompactList}\small\item\em boid constructor \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_boid}{Boid} Class 
+
+\subsection{Member Function Documentation}
+\index{Boid@{Boid}!Alignment@{Alignment}}
+\index{Alignment@{Alignment}!Boid@{Boid}}
+\subsubsection[{\texorpdfstring{Alignment(vector$<$ Boid $>$ Boids)}{Alignment(vector< Boid > Boids)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pvector} Boid\+::\+Alignment (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Boid} $>$}]{Boids}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boid_ac1830d68d2af0eade8d26fc6084960aa}{}\label{class_boid_ac1830d68d2af0eade8d26fc6084960aa}
+\hyperlink{class_pvector}{Pvector} \hyperlink{class_boid_ac1830d68d2af0eade8d26fc6084960aa}{Alignment(vector$<$\+Boid$>$ Boids)}\+: Computes a vector that causes the velocity of the current boid to match that of boids that are nearby. \index{Boid@{Boid}!Cohesion@{Cohesion}}
+\index{Cohesion@{Cohesion}!Boid@{Boid}}
+\subsubsection[{\texorpdfstring{Cohesion(vector$<$ Boid $>$ Boids)}{Cohesion(vector< Boid > Boids)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pvector} Boid\+::\+Cohesion (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Boid} $>$}]{Boids}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boid_ae1f8d78202e983a11f1ee72e1de0473c}{}\label{class_boid_ae1f8d78202e983a11f1ee72e1de0473c}
+
+
+Functions involving S\+F\+ML and visualisation linking. 
+
+\hyperlink{class_pvector}{Pvector} \hyperlink{class_boid_ae1f8d78202e983a11f1ee72e1de0473c}{Cohesion(vector$<$\+Boid$>$ Boids)}\+: Computes a vector that causes the current boid to seek the center of mass of nearby boids. \index{Boid@{Boid}!Separation@{Separation}}
+\index{Separation@{Separation}!Boid@{Boid}}
+\subsubsection[{\texorpdfstring{Separation(vector$<$ Boid $>$ Boids)}{Separation(vector< Boid > Boids)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pvector} Boid\+::\+Separation (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Boid} $>$}]{Boids}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boid_aa6910fba0e1edba1eac4c1ca234d1199}{}\label{class_boid_aa6910fba0e1edba1eac4c1ca234d1199}
+\hyperlink{class_pvector}{Pvector} \hyperlink{class_boid_aa6910fba0e1edba1eac4c1ca234d1199}{Separation(vector$<$\+Boid$>$ Boids)}\+: If any other boids are within a given distance, Separation computes a a vector that distances the current boid from the boids that are too close. 
+
+\subsection{Member Data Documentation}
+\index{Boid@{Boid}!predator@{predator}}
+\index{predator@{predator}!Boid@{Boid}}
+\subsubsection[{\texorpdfstring{predator}{predator}}]{\setlength{\rightskip}{0pt plus 5cm}int Boid\+::predator}\hypertarget{class_boid_af6faa80aeac271c4521eca772336a8b9}{}\label{class_boid_af6faa80aeac271c4521eca772336a8b9}
+
+
+$<$ bool predator\+: flag that specifies whether a given boid is a predator. 
+
+bool killed\+: flag that specifies whether a given boid is alive. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Boid.\+h\end{DoxyCompactItemize}
