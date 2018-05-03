@@ -6,3 +6,10 @@ Implementation of visualisation of ED drawings
 
 ## Assignment-2
 A simulation of starling murmurations
+
+## Assignment-3
+A brief case study on the Electonic Voting Machines used in India
+
+## Assignment-4
+A brief case study on the Public Distribution Scheme in India
+
